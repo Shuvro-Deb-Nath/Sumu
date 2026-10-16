@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080910">
+  <meta name="description" content="A little birthday universe made especially for Sumu.">
+  <title>For Sumu ✦ A Birthday Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="topbar">
+    <div class="brand"><span class="brand-star">✦</span> A LITTLE SOMETHING</div>
+    <div class="top-controls">
+      <button id="musicToggle" class="icon-button" aria-label="Toggle background music" aria-pressed="false" title="Toggle music">♫ <span id="musicLabel">Music off</span></button>
+      <div class="progress-wrap"><span id="progressText">01 / 05</span><div class="progress-track"><i id="progressFill"></i></div></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="scene active" id="scene-0" aria-labelledby="opening-title">
+      <div class="opening-orbit orbit-one"></div><div class="opening-orbit orbit-two"></div>
+      <div class="eyebrow"><span class="tiny-star">✦</span> A private little universe <span class="tiny-star">✦</span></div>
+      <div class="envelope-wrap" id="envelope" role="button" tabindex="0" aria-label="Open your birthday invitation">
+        <div class="envelope-glow"></div>
+        <div class="envelope">
+          <div class="envelope-back"></div><div class="letter-edge"></div>
+          <div class="envelope-front"></div><div class="envelope-flap"></div>
+          <div class="wax-seal">S</div>
+        </div>
+        <div class="envelope-caption">tap to open your surprise</div>
+      </div>
+      <h1 id="opening-title" class="hero-title">Hey, <em>Sumu.</em></h1>
+      <p class="hero-copy">There's a tiny universe waiting for you.<br>And every little detail is here for a reason.</p>
+      <button class="primary-button" id="openButton">Open your surprise <span>↗</span></button>
+      <p class="microcopy">MADE WITH A LITTLE TOO MUCH LOVE & A LOT OF FRIENDSHIP</p>
+    </section>
+
+    <section class="scene" id="scene-1" aria-labelledby="memories-title">
+      <div class="section-kicker">CHAPTER 01 · THE YEARS IN BETWEEN</div>
+      <h2 id="memories-title" class="section-title">Little moments,<br><em>golden memories.</em></h2>
+      <p class="section-copy">Each year, a new memory finds its place on the line.</p>
+      <div class="memory-stage">
+        <div class="memory-sequence" id="memorySequence" aria-hidden="true">
+          <p class="sequence-year" id="sequenceYear"></p>
+        </div>
+        <div class="memory-frame" id="memoryFrame" aria-label="Sumu's memories, gathered together">
+          <div class="string string-back"></div>
+          <div class="string string-front"></div>
+          <div class="photo-line" id="photoLine">
+            <button class="hanging-photo" data-photo="0" aria-label="Open memory from 2022" aria-hidden="true" disabled>
+              <span class="clip"></span><span class="polaroid"><span class="memory-year">2022</span><img src="assets/2022.jpg" alt="Sumu — 2022"><span class="photo-caption">the beginning</span></span>
+            </button>
+            <button class="hanging-photo" data-photo="1" aria-label="Open memory from 2023" aria-hidden="true" disabled>
+              <span class="clip"></span><span class="polaroid"><span class="memory-year">2023</span><img src="assets/2023.jpg" alt="Sumu — 2023"><span class="photo-caption">another chapter</span></span>
+            </button>
+            <button class="hanging-photo" data-photo="2" aria-label="Open memory from 2024" aria-hidden="true" disabled>
+              <span class="clip"></span><span class="polaroid"><span class="memory-year">2024</span><img src="assets/2024.jpg" alt="Sumu — 2024"><span class="photo-caption">still collecting moments</span></span>
+            </button>
+            <button class="hanging-photo" data-photo="3" aria-label="Open memory from 2025" aria-hidden="true" disabled>
+              <span class="clip"></span><span class="polaroid"><span class="memory-year">2025</span><img src="assets/2025.jpg" alt="Sumu — 2025"><span class="photo-caption">the story keeps going</span></span>
+            </button>
+            <button class="hanging-photo" data-photo="4" aria-label="Open memory from 2026" aria-hidden="true" disabled>
+              <span class="clip"></span><span class="polaroid"><span class="memory-year">2026</span><img src="assets/2026.jpg" alt="Sumu — 2026"><span class="photo-caption">a new page</span></span>
+            </button>
+            <button class="hanging-photo" data-photo="5" aria-label="Open another memory from 2026" aria-hidden="true" disabled>
+              <span class="clip"></span><span class="polaroid"><span class="memory-year">2026</span><img src="assets/2026-2.jpg" alt="Sumu — another moment from 2026"><span class="photo-caption">same year, more magic</span></span>
+            </button>
+          </div>
+          <div class="fairy-lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+      </div>
+      <div class="memory-note"><span>✧</span> Some years pass. Some moments stay. <span>✧</span></div>
+      <button class="primary-button next-button">Keep going <span>→</span></button>
+    </section>
+
+    <section class="scene likes-scene" id="scene-2" aria-labelledby="likes-title">
+      <div class="section-kicker">CHAPTER 02 · THE SUMU UNIVERSE</div>
+      <h2 id="likes-title" class="section-title">A few of your <em>favorite things.</em></h2>
+      <p class="section-copy">Because a birthday story should celebrate all the little things that make you, you.</p>
+      <div class="likes-preview" id="likesPreview" aria-hidden="true">
+        <div class="likes-preview-icon" id="likesPreviewIcon" aria-hidden="true"></div>
+        <p class="like-label" id="likesPreviewLabel"></p>
+        <h3 id="likesPreviewTitle"></h3>
+        <p id="likesPreviewCopy"></p>
+      </div>
+      <div class="likes-grid">
+        <article class="like-card car-card" aria-hidden="true">
+          <div class="like-icon" aria-hidden="true">🏎️</div>
+          <p class="like-label">THE NEED FOR SPEED</p>
+          <h3>Cars, obviously.</h3>
+          <p>May your dream garage be full of beautiful machines, your playlists be road-trip worthy, and every ride come with a little main-character moment.</p>
+          <div class="car-line-art" aria-hidden="true">〰︎ ━━━━━━ ◉ ━━━━━ ◉</div>
+        </article>
+        <article class="like-card food-card" aria-hidden="true">
+          <div class="like-icon" aria-hidden="true">🍜</div>
+          <p class="like-label">A LITTLE EXTRA FLAVOR</p>
+          <h3>Food & your kitchen magic.</h3>
+          <p>For the girl who enjoys good food and can make something delicious herself: may your recipes work on the first try and your snacks never run out.</p>
+          <div class="food-doodles" aria-hidden="true">✦  ♡  ✧  ♡  ✦</div>
+        </article>
+        <article class="like-card beauty-card" aria-hidden="true">
+          <div class="like-icon" aria-hidden="true">💄</div>
+          <p class="like-label">GLAM TIME</p>
+          <h3>Makeup & little treats.</h3>
+          <p>May your favorite makeup kits always have the perfect shade, your mirror return extra confidence, and every getting-ready moment feel like a mini makeover montage.</p>
+          <div class="beauty-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+      </div>
+      <p class="likes-footnote">Dream big. Eat well. Get glam. Repeat. <span>✦</span></p>
+      <button class="primary-button next-button">A note for you <span>→</span></button>
+    </section>
+
+    <section class="scene" id="scene-3" aria-labelledby="letter-title">
+      <div class="section-kicker">CHAPTER 03 · A NOTE JUST FOR YOU</div>
+      <h2 id="letter-title" class="section-title">Dear <em>Sumu,</em></h2>
+      <div class="letter-card">
+        <div class="letter-decoration">✦</div>
+        <div id="typedLetter" class="typed-letter" aria-hidden="true"><span id="typedText" class="typed-text"></span><span id="typedGhost" class="typed-ghost"></span></div>
+        <p class="sr-only" id="letterSr"></p>
+        <div class="letter-signoff">— someone who’s very glad you exist <span>♡</span></div>
+      </div>
+      <p class="easter-hint">Psst… not every star in this little universe is just decoration.</p>
+      <button class="primary-button next-button">One last thing <span>→</span></button>
+      <button class="secret-star" id="secretStar" aria-label="A tiny hidden surprise" title="A tiny hidden surprise">✦</button>
+      <div class="secret-message" id="secretMessage" role="status">SECRET UNLOCKED ✦ Official reminder: you are required to have a ridiculously good birthday. No appeals accepted.</div>
+    </section>
+
+    <section class="scene finale" id="scene-4" aria-labelledby="finale-title">
+      <div class="section-kicker">CHAPTER 04 · THE MAIN EVENT</div>
+      <p class="finale-intro">Okay, birthday girl. One important task remains.</p>
+      <h2 id="finale-title" class="section-title">Make a <em>wish.</em></h2>
+      <p class="section-copy">Close your eyes, think of something wonderful, then tap the button to make a wish come true.</p>
+      <div class="cake-scene">
+        <div class="spotlight"></div>
+        <div class="cake">
+          <div class="candle-row">
+            <div class="candle c1"><span class="flame"></span><span class="wick"></span></div>
+            <div class="candle c2"><span class="flame"></span><span class="wick"></span></div>
+            <div class="candle c3"><span class="flame"></span><span class="wick"></span></div>
+            <div class="candle c4"><span class="flame"></span><span class="wick"></span></div>
+            <div class="candle c5"><span class="flame"></span><span class="wick"></span></div>
+          </div>
+          <div class="cake-top"></div><div class="cake-upper"><span class="icing-drip"></span></div><div class="cake-lower"><span class="cake-shine"></span></div>
+          <div class="cake-plate"></div>
+        </div>
+        <div class="cake-sparkles" aria-hidden="true">✦ <span>✧</span> ✦ <span>✧</span> ✦</div>
+      </div>
+      <div class="blow-controls">
+        <button id="blowButton" class="primary-button">Blow out the candles <span>✦</span></button>
+      </div>
+      <p id="micStatus" class="mic-status">Make a wish, then tap to blow out the candles. ✨</p>
+      <div id="birthdayReveal" class="birthday-reveal" aria-live="polite">
+        <div class="confetti-word">✦ ✧ ✦</div>
+        <h3>Happy Birthday, <em>Sumu!</em></h3>
+        <p>May this year bring you the kind of happiness that sneaks up on you, the kind of laughter that makes your stomach hurt, and a hundred new reasons to smile.</p>
+        <p class="final-wish">Keep being wonderfully, unapologetically you. The world is better with you in it. ♡</p>
+        <button id="replayButton" class="secondary-button">↺ Relive the surprise</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="bottom-nav">
+    <button id="backButton" class="nav-button" disabled>← Back</button>
+    <span class="nav-center">FOR SUMU <span>✦</span></span>
+    <button id="continueButton" class="nav-button">Continue →</button>
+  </div>
+
+  <div class="photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Photo memory">
+    <button class="modal-close" id="modalClose" aria-label="Close photo">×</button>
+    <div class="modal-polaroid"><img id="modalPhoto" src="" alt=""><p id="modalCaption"></p></div>
+    <p class="modal-hint">a little piece of the timeline ✦</p>
+  </div>
+  <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+  <audio id="birthdayMusic" autoplay loop preload="auto">
+    <!-- The page attempts audible autoplay; browser policies may require user interaction. -->
+    <source src="./assets/birthday-music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
